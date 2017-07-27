@@ -44,4 +44,5 @@ the_intern = media.Movie(
 
 movies = [toy_story, the_terminal, the_patriot, the_intern, school_of_rock, avatar]
 
+# gernerate HTML website for movie list, then open browser window
 fresh_tomatoes.open_movies_page(movies)
