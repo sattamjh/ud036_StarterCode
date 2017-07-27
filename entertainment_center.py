@@ -6,6 +6,7 @@ then make a list of them to generate the movie website using "fresh_tomatoes"
 import media
 import fresh_tomatoes
 
+# Movie(title, poster_image, trailer_youtube)
 toy_story = media.Movie(
     "Toy Story",
     "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg",
