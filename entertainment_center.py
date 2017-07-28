@@ -21,7 +21,9 @@ avatar = media.Movie(
 
 the_terminal = media.Movie(
     "The Terminal",
-    "https://upload.wikimedia.org/wikipedia/en/8/86/Movie_poster_the_terminal.jpg",
+    # I'm not big fan of splitting URL string over multible lines
+    # while there is "word wrapping" feature in the text editor.
+    "https://upload.wikimedia.org/wikipedia/en/8/86/Movie_poster_the_terminal.jpg",  # noqa
     "https://www.youtube.com/watch?v=GZjC9dAvWuU"
     )
 
@@ -43,7 +45,10 @@ the_intern = media.Movie(
     "https://www.youtube.com/watch?v=R1z5q6SSH00"
     )
 
-movies = [toy_story, the_terminal, the_patriot, the_intern, school_of_rock, avatar]
+movies = [
+    toy_story, the_terminal, the_patriot,
+    the_intern, school_of_rock, avatar
+    ]
 
-# gernerate HTML website for movie list, then open browser window
+# gernerate HTML website from movie list, then open it in a browser window
 fresh_tomatoes.open_movies_page(movies)
